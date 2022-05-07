@@ -10,3 +10,13 @@ header {
 .typewriter-text > .typewriter-curr {
   border-right: 0.2rem solid;
 }
+
+.grid-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-picture {
+  width: 100%;
+  height: fit-content;
+}
