@@ -1,13 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar.jsx'
 import Header from './components/Header.jsx'
+import AboutMe from './components/AboutMe.jsx'
 
 function App() {
   return (
     <main>
-      <Navbar />
-      <Header />
+      {/* <Navbar /> */}
+      {/* <Header /> */}
+      <AboutMe />
     </main>
 
   );

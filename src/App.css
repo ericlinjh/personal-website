@@ -30,3 +30,13 @@ button.header-button:hover {
   background-color: black;
   width:100%;
 }
+
+.grid-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-picture {
+  width: 100%;
+  height: fit-content;
+}
