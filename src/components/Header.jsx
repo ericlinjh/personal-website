@@ -1,5 +1,5 @@
 import { React, useEffect } from 'react';
-import {Typography, Container, Grid, Button} from '@mui/material'
+import { Typography, Container, Grid, Button } from '@mui/material'
 
 function TypeWriter(txtElement, words, wait = 3000) {
     this.txtElement = txtElement;
@@ -55,7 +55,7 @@ export default function Header () {
         init();
     });
     return (
-        <Container>
+        <Container className="header">
             <Typography variant="h3" align="center">hi, my name is</Typography>
             <Typography variant="h1" align="center">eric lin</Typography>
             <br />
@@ -72,10 +72,10 @@ export default function Header () {
             <br />
             <Grid container spacing={3} justifyContent="center">
                 <Grid item>
-                    <Button variant="contained">Résumé</Button>
+                    <Button variant="outlined" className="header-button">Résumé</Button>
                 </Grid>
                 <Grid item>
-                    <Button variant="contained">Projects</Button>
+                    <Button variant="outlined" className="header-button">Projects</Button>
                 </Grid>
             </Grid>
         </Container>

@@ -10,3 +10,23 @@ header {
 .typewriter-text > .typewriter-curr {
   border-right: 0.2rem solid;
 }
+
+button.header-button {
+  border-color: rgb(100, 100, 100);
+  color: black;
+}
+
+button.header-button:hover {
+  border-color: black;
+}
+
+.header {
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+}
+
+.aboutme {
+  color: white;
+  background-color: black;
+  width:100%;
+}
