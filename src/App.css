@@ -40,3 +40,9 @@ button.header-button:hover {
   width: 100%;
   height: fit-content;
 }
+
+.skills-images img {
+  max-width: 75%;
+  max-height: 100%;
+  display: block;
+}
