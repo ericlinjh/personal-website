@@ -1,5 +1,9 @@
 import React from 'react'
+<<<<<<< HEAD
 import { Container, Typography, Grid} from '@mui/material/'
+=======
+import { Container, Typography, Grid, List, ListItem} from '@mui/material/'
+>>>>>>> a74814611282fe7d333f0b6683e4d36d2d9e953a
 
 const languagesArray = ["Javascript", "CSS", "HTML", "Python", "C++", "Java", "Bash"];
 const technologiesArray = ["React", "Moodle", "Google Cloud", "Figma", "Mustache", "Bootstrap", "Material-UI", "Git", "JIRA", "MongoDB", "Express.js", "Three.js", "Node.js", "AutoCAD", "Adobe Cloud Suite"];
