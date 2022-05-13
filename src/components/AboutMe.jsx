@@ -1,5 +1,8 @@
 import React from 'react'
-import { Container, Typography, Grid, Stack } from '@mui/material/'
+import { Container, Typography, Grid, List, ListItem} from '@mui/material/'
+
+const languagesArray = ["Javascript", "CSS", "HTML", "Python", "C++", "Java", "Bash"];
+const technologiesArray = ["React", "Moodle", "Google Cloud", "Figma", "Mustache", "Bootstrap", "Material-UI", "Git", "JIRA", "MongoDB", "Express.js", "Three.js", "Node.js", "AutoCAD", "Adobe Cloud Suite"];
 
 export default function AboutMe() {
     return(
@@ -14,26 +17,29 @@ export default function AboutMe() {
                     <img src="eric-picture.png" alt="Picture of Me!" className="profile-picture"/>
                 </Grid>
                 <Grid item xs={2} align="left" sx={{ display: "flex", alignItems: "center", justifyContent: "flex-start" }}>
-                    <Typography variant="p" align="center">As of now, I have experience working mainly as a Front-End Developer, but have also dabbled in Project Management. My hobbies including reading Manga, playing video games, and editing images and videos!</Typography>
+                    <Typography variant="p" align="center">As of now, I have experience working mainly as a Front-End Developer, but have also dabbled in Project Management. My hobbies including reading manga, playing video games, playing Go, and editing images and videos!</Typography>
                 </Grid>
             </Grid>
-            <Grid container spacing={2} justifyContent="center">
-                <Grid item xs={6} align="left">
-                    <Typography variant="h5">Skills:</Typography>
-                </Grid>
-            </Grid>
-            <Grid container spacing={2} justifyContent="center">
-                <Grid item xs={6}>
-                    <Stack direction="row" spacing={5}>
-                        <Typography variant="p">- Javascript</Typography>
-                        <Typography variant="p">- CSS</Typography>
-                        <Typography variant="p">- Python</Typography>
-                        <Typography variant="p">- C++</Typography>
-                        <Typography variant="p">- Java</Typography>
-                        <Typography variant="p">- Bash</Typography>
-                    </Stack>
-                </Grid>
-            </Grid>
+           <Grid container spacing={6} justifyContent="center">
+               <Grid item xs={3}>
+                    <Typography variant="h5">Personal Info:</Typography>
+                    <Typography variant="p">Full Name:</Typography> <br />
+                    <Typography variant="p" className="sub-item">Eric Jiahong Lin</Typography> <br />
+                    <Typography variant="p">Birth Date:</Typography> <br />
+                    <Typography variant="p" className="sub-item">June 27, 2003</Typography> <br />
+                    <Typography variant="p">Email:</Typography> <br />
+                    <Typography variant="p" className="sub-item">e54lin@uwaterloo.ca</Typography> <br />
+                    <Typography variant="p">Phone Number:</Typography> <br />
+                    <Typography variant="p" className="sub-item">(647) 983-8627</Typography> <br />
+               </Grid>
+               <Grid item xs={3}>
+                    <Typography variant="h5">Education:</Typography>
+                    <Typography variant="p">University of Waterloo</Typography> <br />
+                    <Typography variant="p">Bachelor of Applied Sciences</Typography> <br />
+                    <Typography variant="p">Systems Design Engineering</Typography> <br />
+                    <Typography variant="p">Sep. 2021 - Apr. 2026</Typography> <br />
+               </Grid>
+           </Grid>
         </Container>
     )
 }
